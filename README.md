@@ -59,9 +59,9 @@ mkDerivation {
 |No special Nix configuration             | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |   | ✔️ 
 |No import from derivation                | ✔️ | ✔️ |   | ✔️ | ✔️ | ✔️ | ✔️ 
 |Uses subdirectory gitignores             |   |   | ✔️ |   |   | ✔️ | ✔️ 
-|Uses parent gitignores                   |   |   |   |   |   |✔️ ?| ✔️ 
-|Uses user gitignores                     |   |   |   |   |   | ✔️ | ✔️ 
-|Has a test suite                         |   | ✔️ | ✔️ | ✔️ |   | ? | ✔️
+|Uses parent gitignores                   |   |   |   |   | ⁄ |✔️ ?| ✔️ 
+|Uses user gitignores                     |   |   |   |   | ⁄ | ✔️ | ✔️ 
+|Has a test suite                         |   | ✔️ | ✔️ | ✔️ | ✔️ | ? | ✔️
 |Works with `restrict-eval` / Hydra       | ✔️ | ✔️ |   | ✔️ | ✔️ |   | ✔️
 |Descends into submodule correctly        |   | ? | ? | ? | ? |✔️ ?| ? #8 
 |Included in nixpkgs                      | ✔️ | ✔️ | ✔️ |   |   |   |
@@ -74,6 +74,7 @@ mkDerivation {
 |   | Not supported
 |?  | Probably not supported
 |-  | Not applicable or depends
+|⁄  | Implementation not intended
 
 
 Please open a PR if you've found another feature, determined any of the '?' or found an inaccuracy!
